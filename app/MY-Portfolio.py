@@ -71,27 +71,41 @@ if custom_css.exists():
 import base64
 
 # ---------- Profile Section ----------
-profile_pic_path = Path("app/assets/Profile1.jpeg")
+profile_pic_path = Path("assets/Profile1.jpeg")
 
-# CSS Frame for Image
+# CSS Frame for Image (Modern Gradient Style)
 st.markdown("""
 <style>
 .profile-frame {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px solid #4A90E2;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+    padding: 8px;
     margin: auto;
+    background: linear-gradient(135deg, #4A90E2, #8E44AD);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.profile-frame:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
 .profile-frame img {
     width: 100%;
     height: 100%;
+    border-radius: 15px;
     object-fit: cover;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.25);
 }
 </style>
 """, unsafe_allow_html=True)
+
+import base64
 
 # Convert image to Base64
 if profile_pic_path.exists():
@@ -118,7 +132,6 @@ with col2:
     st.markdown(f"<div class='big-title' style='color:black;'>{config['name']}</div>", unsafe_allow_html=True)
     st.markdown(f"<div class='sub-title'>{config['title']}</div>", unsafe_allow_html=True)
     st.write(config.get("description", ""))
-
 
 # ---------- Sidebar Navigation ----------
 st.sidebar.title("Navigation")
@@ -177,4 +190,5 @@ elif page == "Contact":
     st.write(f"### 📞 Phone: {config.get('phone', '')}")
     st.write(f"###  Linked-In: {config.get('linkedin', '')}")
     st.write(f"### 📍 Location: {config.get('location', '')}")
+
 
