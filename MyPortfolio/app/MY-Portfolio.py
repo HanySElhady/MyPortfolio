@@ -7,7 +7,7 @@ from pathlib import Path
 st.set_page_config(page_title="Portfolio", layout="wide")
 
 # ---------- Load Config ----------
-config_path = Path("config.json")
+config_path = Path("app/config.json")
 if not config_path.exists():
     st.error("config.json not found!")
     st.stop()
@@ -96,3 +96,4 @@ elif page == "Contact":
     st.write(f"### 📞 Phone: {config.get('phone', '')}")
     st.write(f"###  Linked-In: {config.get('linkedin', '')}")
     st.write(f"### 📍 Location: {config.get('location', '')}")
+
