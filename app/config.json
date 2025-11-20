@@ -26,38 +26,39 @@
             "name": "Sales Dashboard",
             "description": "Dashboard تحليلي كامل لعرض بيانات المبيعات.",
             "images": [
-                "assets/projects/sales_1.jpg",
-                "assets/projects/sales_2.jpg",
-                "assets/projects/sales_3.jpg",
-                "assets/projects/sales_4.jpg",
+                "app/assets/projects/sales_1.jpg",
+                "app/assets/projects/sales_2.jpg",
+                "app/assets/projects/sales_3.jpg",
+                "app/assets/projects/sales_4.jpg",
                 
-                "assets/projects/sales_7.jpg",
-                "assets/projects/sales_8.jpg"
+                "app/assets/projects/sales_7.jpg",
+                "app/assets/projects/sales_8.jpg"
             ]
         },
         {
             "name": "Automated DE Pipeline",
             "description": "نظام Auto Data Engineering Pipeline",
             "images": [
-                "assets/projects/AUB.jpg",
-                "assets/projects/AUB1.jpg",
-                "assets/projects/AUB2.jpg",
-                "assets/projects/AUB3.jpg",
-                "assets/projects/sales_5.jpg",
-                "assets/projects/sales_6.jpg"
+                "app/assets/projects/AUB.jpg",
+                "app/assets/projects/AUB1.jpg",
+                "app/assets/projects/AUB2.jpg",
+                "app/assets/projects/AUB3.jpg",
+                "app/assets/projects/sales_5.jpg",
+                "app/assets/projects/sales_6.jpg"
             ]
         },
         {
             "name": "Pipeline Tracing System",
             "description": "نظام متابعة انتاج مواسير وطباعة باركود",
             "images": [
-                "assets/projects/sales_10.jpg",
-                "assets/projects/sales_11.jpg",
-                "assets/projects/sales_12.jpg",
-                "assets/projects/DB1.jpg",
-                "assets/projects/sales_7.jpg",
-                "assets/projects/sales_8.jpg"
+                "app/assets/projects/sales_10.jpg",
+                "app/assets/projects/sales_11.jpg",
+                "app/assets/projects/sales_12.jpg",
+                "app/assets/projects/DB1.jpg",
+                "app/assets/projects/sales_7.jpg",
+                "app/assets/projects/sales_8.jpg"
             ]
         }
     ]
 }
+
