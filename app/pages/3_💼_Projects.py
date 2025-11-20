@@ -2,7 +2,7 @@ import streamlit as st
 import json
 from pathlib import Path
 
-config = json.load(open("config.json", "r", encoding="utf-8"))
+config = json.load(open("app/config.json", "r", encoding="utf-8"))
 
 st.title("💼 Projects")
 
@@ -74,4 +74,5 @@ for i, proj in enumerate(projects):
             for img in proj["images"]:
                 img_path = Path(img)
                 if img_path.exists():
+
                     st.image(img_path, use_container_width=True)
