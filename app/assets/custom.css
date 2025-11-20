@@ -56,3 +56,11 @@ body:not(.dark) .project-card {
 body.dark .project-card {
     background: rgba(20, 20, 20, 0.55);
 }
+[data-testid="stSidebar"] {
+    background-color: #f5f7fa !important;
+    color: #000 !important;
+}
+[data-testid="stSidebar"] * {
+    color: #000 !important;
+}
+
