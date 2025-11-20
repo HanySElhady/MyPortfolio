@@ -96,3 +96,4 @@ elif page == "Contact":
     st.write(f"### 📞 Phone: {config.get('phone', '')}")
     st.write(f"###  Linked-In: {config.get('linkedin', '')}")
     st.write(f"### 📍 Location: {config.get('location', '')}")
+
