@@ -71,7 +71,7 @@ if custom_css.exists():
 import base64
 
 # ---------- Profile Section ----------
-profile_pic_path = Path("assets/Profile1.jpeg")
+profile_pic_path = Path("app/assets/Profile1.jpeg")
 
 # CSS Frame for Image (Modern Gradient Style)
 st.markdown("""
@@ -190,5 +190,6 @@ elif page == "Contact":
     st.write(f"### 📞 Phone: {config.get('phone', '')}")
     st.write(f"###  Linked-In: {config.get('linkedin', '')}")
     st.write(f"### 📍 Location: {config.get('location', '')}")
+
 
 
