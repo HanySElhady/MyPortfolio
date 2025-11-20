@@ -41,7 +41,7 @@ education_data = [
 st.set_page_config(page_title="HanyElhady-Portfolio", layout="wide")
 
 # ---------- Load Config ----------
-config_path = Path("config.json")
+config_path = Path("app/config.json")
 if not config_path.exists():
     st.error("config.json not found!")
     st.stop()
@@ -56,14 +56,14 @@ theme = st.session_state.theme
 
 # ---------- Load CSS ----------
 # Theme CSS
-theme_file = Path(f"assets/themes/{theme}.css")
+theme_file = Path(f"app/assets/themes/{theme}.css")
 if theme_file.exists():
     with open(theme_file) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
 # General CSS
-custom_css = Path("assets/custom.css")
+custom_css = Path("app/assets/custom.css")
 if custom_css.exists():
     with open(custom_css) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -71,7 +71,7 @@ if custom_css.exists():
 import base64
 
 # ---------- Profile Section ----------
-profile_pic_path = Path("assets/Profile1.jpeg")
+profile_pic_path = Path("app/assets/Profile1.jpeg")
 
 # CSS Frame for Image
 st.markdown("""
@@ -130,7 +130,7 @@ if page == "Home":
     st.write(config.get("about_me", ""))
 
     st.subheader("📜 Certificates")
-    certs_path = Path("assets/certificates")
+    certs_path = Path("app/assets/certificates")
     if certs_path.exists():
         cert_files = list(certs_path.glob("*.*"))
         for cert in cert_files:
@@ -177,3 +177,4 @@ elif page == "Contact":
     st.write(f"### 📞 Phone: {config.get('phone', '')}")
     st.write(f"###  Linked-In: {config.get('linkedin', '')}")
     st.write(f"### 📍 Location: {config.get('location', '')}")
+
