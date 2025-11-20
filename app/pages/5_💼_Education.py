@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 
-config = json.load(open("config.json", "r", encoding="utf-8"))
+config = json.load(open("app/config.json", "r", encoding="utf-8"))
 
 st.title("👨🏻‍🎓 Education")
 
@@ -52,5 +52,6 @@ for edu in education_data:
         if edu.get("notes"):
             with st.expander("🔍 Details"):
                 st.write(edu["notes"])
+
 
         st.markdown("---")
