@@ -9,6 +9,10 @@
     "location": "Egypt",
     
     "skills": [
+        "Product Owner",
+        "DB archeticture and developer",
+        "Data Analyst",
+        "Data Engineering",
         "Python",
         "Pandas",
         "Plotly",
@@ -61,4 +65,5 @@
         }
     ]
 }
+
 
